@@ -1,0 +1,68 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Perfil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-content class="profile-content">
+    <!-- Encabezado con título -->
+    <div class="profile-header">
+     <h2 class="profile-username">Usuario123</h2>
+    </div>
+  
+    <!-- Formulario de datos del usuario -->
+    <form class="profile-form">
+      <ion-list>
+        <!-- Nombre -->
+        <ion-item>
+          <ion-label position="stacked">Nombre</ion-label>
+          <ion-input type="text" placeholder="Ingrese su nombre"></ion-input>
+        </ion-item>
+  
+        <!-- Apellido -->
+        <ion-item>
+          <ion-label position="stacked">Apellido</ion-label>
+          <ion-input type="text" placeholder="Ingrese su apellido"></ion-input>
+        </ion-item>
+  
+        <!-- Celular -->
+        <ion-item>
+          <ion-label position="stacked">Celular</ion-label>
+          <ion-input type="tel" placeholder="Ingrese su celular"></ion-input>
+        </ion-item>
+  
+        <!-- Email -->
+        <ion-item>
+          <ion-label position="stacked">Email</ion-label>
+          <ion-input type="email" placeholder="Ingrese su correo electrónico"></ion-input>
+        </ion-item>
+  
+        <!-- Clave -->
+        <ion-item>
+          <ion-label position="stacked">Clave</ion-label>
+          <ion-input type="password" placeholder="Ingrese su clave"></ion-input>
+        </ion-item>
+      </ion-list>
+
+          <!-- Clave -->
+          <ion-item>
+            <ion-label position="stacked">Confirmar Clave</ion-label>
+            <ion-input type="password" placeholder="Confirme su clave"></ion-input>
+          </ion-item>
+  
+      <!-- Botón para guardar -->
+      <div class="button-container">
+        <ion-button expand="block" color="primary">Guardar Cambios</ion-button>
+      </div>
+    </form>
+
+    <!-- Botón de cerrar sesión -->
+<div class="logout-container">
+  <ion-button expand="block" color="danger">Cerrar sesión</ion-button>
+</div>
+
+  </ion-content>
+
+</ion-content>
